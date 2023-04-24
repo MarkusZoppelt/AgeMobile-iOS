@@ -11,6 +11,7 @@
 		2F65F0EB29F694A5000E1FBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F65F0EA29F694A5000E1FBC /* ContentView.swift */; };
 		2F65F0ED29F694A6000E1FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F65F0EC29F694A6000E1FBC /* Assets.xcassets */; };
 		2F65F0F129F694A6000E1FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F65F0F029F694A6000E1FBC /* Preview Assets.xcassets */; };
+		2F65F0F829F6958F000E1FBC /* Age.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F65F0F729F6958E000E1FBC /* Age.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2F65F0EC29F694A6000E1FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F65F0EE29F694A6000E1FBC /* AgeMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgeMobile.entitlements; sourceTree = "<group>"; };
 		2F65F0F029F694A6000E1FBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F65F0F729F6958E000E1FBC /* Age.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Age.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F65F0F829F6958F000E1FBC /* Age.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +39,7 @@
 		2F65F0DC29F694A5000E1FBC = {
 			isa = PBXGroup;
 			children = (
+				2F65F0F729F6958E000E1FBC /* Age.xcframework */,
 				2F65F0E729F694A5000E1FBC /* AgeMobile */,
 				2F65F0E629F694A5000E1FBC /* Products */,
 			);
@@ -287,7 +291,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.zoppelt.AgeMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +331,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.zoppelt.AgeMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
